@@ -1,0 +1,513 @@
+
+body
+{/*
+	background-color: #FFF0E0;
+	background-image: url("wallpaperh.jpg");
+	background-size: cover;*/
+	background-color: white;
+}
+
+div.logo
+{
+	position:absolute;
+	left:0;
+	right:0;
+	top: 0;
+	z-index: 1;
+	background-color: #0595AD;
+	padding-top: 10px;
+	padding-left: 3px;
+	padding-right: 3px;
+	padding-bottom: 18px;
+	font-family: sans-serif;
+	border-radius:0px;
+	height: 70%;
+	box-shadow:0px 5px 10px grey;
+}
+a.logo
+{
+	color: /*#FFC5FE*/white;
+	font-size: 40px;
+	font-weight: bold;
+	padding-top: 5px;
+	font-family: "Giddyup Std",sans-serif;
+
+	z-index:3;
+}
+a.logo:hover
+{
+	animation: color 1s infinite;
+	transition: animation 0.5s;
+}
+@keyframes color
+{
+	0%{ color: #9b9b9b;}
+	10%{ color: #fd7979;}
+	20%{ color: #ffc282;}
+	30%{ color: #eeef8b;}
+	40%{ color: #97ef8b;}
+	50%{ color: #8befee;}
+	60%{ color: #8b9def;}
+	70%{ color: #e58bef;}
+	80%{ color: #ef8bd8;}
+	90%{ color: #c38bef;}
+	100%{ color: #9b9b9b;}
+}
+div.menuinlogo
+{
+	
+	font-size: 18px;
+	position: relative;
+	padding-right: 10px;
+	z-index:2;
+}
+a
+{
+	text-decoration: none;
+	color: white;
+	transition: color 0.3s;
+}
+a:hover
+{
+	color: black;
+	transition: color 0.3s;
+}
+td.menu
+{
+	padding-top: 4px;
+	border-bottom: 3px solid rgba(249,191,18,0.8);
+	color: #f9bf12;
+}
+td.menu:hover
+{
+	padding-top: 1px;
+	border: 3px solid rgba(249,191,18,0);
+	background-color: rgba(249,191,18,0.8);
+	color: black;
+	transition: background-color 0.3s;
+}
+
+img.image
+{
+	height: 40%;
+	width: 60%;
+	float: left;
+	position: absolute;
+	left:0px;
+	top: 200px;
+}
+
+a.login
+{
+	background-color: green;
+	border-radius: 4px;
+	padding: 7px;
+	font-size: 22px;
+	vertical-align: middle;
+	color: #ffffff;
+}
+
+
+a.login:hover
+{
+	box-shadow: 0px 0px 20px rgba(132,252,122,0.5);
+	transition: box-shadow 0.3s;
+}
+
+select
+{
+	text-align-last:center;
+}
+
+
+
+font.tag
+{
+	font-size: 70px;
+	font-family: "Arial";
+	font-weight: bolder;
+	color: white;
+	
+}
+font.btag
+{
+	font-size:20px;
+	font-family: "Tox Typewriter";
+	font-style: italic;
+	color: white;
+}
+table.tagt
+{
+	position:absolute;
+	top: 160px;
+	left: 25px;
+}
+div.one
+{
+	position:absolute;
+	left:0px;
+	right:0px;
+	top:70%;
+}
+table.tagt1
+{
+	
+	position:absolute;
+	left:900px;
+	top: 180px;
+	z-index: 0;
+}
+
+font.tag1
+{
+	
+	font-size: 50px;
+	font-family: "Arial";
+	font-weight: bolder;
+	color: #3e3e3e;
+}
+font.btag1
+{
+	
+	font-size:20px;
+	font-family: "Tox Typewriter";
+	font-style: italic;
+	color: grey;
+}
+font.ctag1
+{
+	font-size:50px;
+	font-family: "IMPACT";
+	font-style: bold;
+	color: #CFAE9B;
+	z-index:2;
+	position:absolute;
+	left:770px;
+	top:445px;
+	
+}
+
+div.two
+{
+	position:absolute;
+	left:0;
+	right:0;
+	height:450px;
+	top:1070px;
+	background-color: #FFD1ED;
+	z-index:1;
+	box-shadow: 0px 0px 15px #383838;
+}
+div.button
+{
+	/*border: 2px solid grey;*/
+	height: 295px;
+	width: 295px;
+	background-color: white;
+	border-radius: 400px;
+	position:absolute;
+	top: 80px;
+	left: 630px;
+	
+}
+img.love
+{
+	/*margin: 10px auto 20px;
+    display: block;*/
+	position:relative;
+	top: 20px;
+	left: 580px;
+	z-index:2;
+	/*border: 2px solid grey;*/
+	border-bottom: 50px;
+}
+div.label
+{
+	/*background-color: rgba(0,0,0,0.4);*/
+	z-index:3;
+	height: 230px;
+	width: 230px;
+	border-radius: 400px;
+	position:absolute;
+	top: 110px;
+	left: 653px;
+	cursor: pointer;
+}
+
+#toggle:checked + label ~ div.button
+{
+	background-color: red;
+	
+}
+#toggle:checked + label ~ img.love
+{
+	animation: love 1s;
+}
+@keyframes love
+{
+	0%{height: 375px;width: 375px;}
+	15%{height: 340px;width: 340px;top:40px;left:600px;}
+	30%{height: 430px;width: 430px;top:-5px;left:552px;}
+	50%{height: 430px;width: 430px;top:-5px;left:552px;}
+	60%{height: 350px;width: 350px;top:30px;left:593px;}
+	70%{height: 400px;width: 400px;top:7px;left:567px;}
+	80%{height: 410px;width: 410px;top:3px; left: 563px;}
+	90%{height: 410px;width: 410px;top:3px; left: 563px;}
+	95%{height: 400px;width: 400px;top:7px;left:567px;}
+	100%{height: 375px;width: 375px;top:20px;left:580px;}
+}
+
+table.tagt2
+{
+	position: absolute;
+	left: 30px;
+	top: 150px;
+}
+table.tagt21
+{
+	position: absolute;
+	left: 1000px;
+	top: 170px;
+}
+font.tag2
+{
+	font-size:60px;
+	color: /*40E0D0#8B78FF*/#FF8B8B;
+	font-family: "Centaur";
+	font-weight: bolder;
+	font-style: italic;
+}
+font.btag2
+{
+	font-size:50px;
+	color: /*40E0D0#8B78FF*/#FF8B8B;
+	font-family: "Centaur";
+	font-weight: ;
+	font-style: italic;
+}
+font.tag21
+{
+	font-size:25px;
+	font-family: "Centaur";
+	font-style: italic;
+	color: grey;
+}
+font.btag21
+{
+	font-size:35px;
+	font-family: "Centaur";
+	font-style: italic;
+	font-weight: bold;
+	color: #FF8B8B;
+}
+
+font.world
+{
+	font-family: "Arial Black";
+	font-weight: bolder;
+	font-size: 60px;
+	position:absolute;
+	top: 1950px;left: 21.5%;
+	color:#484848;
+}
+font.india
+{
+	font-family: "Arial Black";
+	font-weight: bolder;
+	font-size: 60px;
+	position:absolute;
+	top: 1950px;left: 61%;
+	color:#484848;
+}
+font.worldt
+{
+	font-family: "Arial";
+	font-weight: bolder;
+	font-size: 40px;
+	position:absolute;
+	top: 2040px;left: 24%;
+	color:#484848;
+	text-align: center;
+}
+font.indiat
+{
+	
+	font-family: "Arial";
+	font-weight: bolder;
+	font-size: 40px;
+	position:absolute;
+	top: 2040px;left: 66%;
+	color:#484848;
+	text-align: center;
+}
+
+div.three
+{
+	position: absolute;
+	top: 2200px;
+	left:0px;right:0px;
+	/*box-shadow: 0px 0px 15px grey;*/
+	height: 570px;
+}
+
+table.companies
+{
+	height: 500px;
+	width: 100%;
+	padding-left: 80px;
+	padding-right: 80px;
+	border-spacing: 20px;
+	padding-top: 40px;
+}
+td.companiest
+{
+	text-align: center;
+	height: 200px;
+	width: 300px;
+	box-shadow: 0px 4px 10px grey;
+}
+table.tagt3
+{
+	position: absolute;
+	left: 59.5%;
+}
+font.logo
+{
+	font-family: "Impact";
+	font-size: 50px;
+	font-weight: bold;
+	color: #1D1D1D;
+}
+
+img.steve
+{
+	position: absolute;
+	top: 2750px;
+	left: 0px;
+}
+div.quote
+{
+	background-color: #1D1D1D;
+	position: absolute;
+	top: 3030px;
+	right: 0px;
+	height: 420px;
+	width: 56%;
+	text-align: right;
+}
+font.jobsquote
+{
+	font-size: 50px;
+	color: white;
+	font-family: "Arial Black";
+	
+}
+div.footer
+{
+	border-width: 20px;
+	border-color: white;
+	position: absolute;
+	top: 3360px;
+	left:0;right:0;
+	clear: left;
+	/*border-top: 2px solid rgba(184,184,184,0.4);*/
+	/*background-color: black;*/
+	height: 60px;
+	color: rgba(255,255,255,0.5);
+	z-index: 1;
+	/*border-radius: 10px;*/
+}
+div.rightfooter
+{
+	margin-top: 30px;
+	margin-left: 30px;
+	float:left;
+	z-index:2
+}
+table.leftfooter
+{
+	
+	margin-top: 20px;
+	margin-left: 20px;
+	float:right;
+	z-index:3
+}
+img.fb
+{
+	height: 40px;
+	width: 40px;	
+}
+div.fb
+{
+	height: 40px;
+	width: 40px;
+	border-radius: 19px;
+	transition: background-color 0.3s;	
+}
+div.insta
+{
+	height: 40px;
+	width: 40px;	
+}
+div.fb:hover
+{
+	width:40px;
+	height: 40px;
+	background-color: #3b5998;
+	z-index:4;
+	transition: background-color 0.3s;
+}
+img.insta
+{
+	height: 40px;
+	width: 40px;
+	float:right;
+}	
+
+div.insta:hover
+{
+	width:40px;
+	height: 40px;
+	border-radius: 14px;
+	background-image: url("../media/instagram color1.jpg") ;
+	z-index:4;
+	transition: background-image 0.3s;
+}
+div.twitter
+{
+	height: 40px;
+	width: 40px;
+	float:right;
+	border-radius: 30px;
+	transition: background-color 0.3s;
+}
+img.twitter
+{
+	padding-top:8px;
+	height: 25px;
+	width: 25px;
+}
+div.twitter:hover
+{
+	width:40px;
+	height: 40px;
+	background-color:#2DAAE1;
+	z-index:5;
+	transition: background-color 0.3s;
+}
+div.contactus
+{
+	border: 2px solid green;
+	border-radius: 20px;
+	height: 40px;
+	width: 100px;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+a.c:hover
+{color:green;}
+font:hover
+{
+cursor: default;
+}
